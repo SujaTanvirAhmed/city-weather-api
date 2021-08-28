@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>JSON Placeholder API</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- javascript -->
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>OpenWeatherMap API - City Weather</h1>
+        <form>
+            <input id="input-city" type="text" placeholder="Enter city name" />
+            <button id="btn-city" type="submit">Submit</button>
+        </form>
+        <p id="error-msg">Error occured during loading weather data!<br />
+            City name might be incorrect!</p>
+        <div id="display" class="display">
+            <h3>Temperature: <span id="temp-kel"></span><sup>o</sup>K, <span id="temp-fah"></span> <sup>o</sup>F, <span
+                    id="temp-cel"></span> <sup>o</sup>C</h3>
+            <h3>Humidity: <span id="humid"></span>%</h3>
+            <h3>Wind Speed: <span id="wind"></span> m/s</h3>
+            <h3>Sunrise: <span id="sunrise"></span></h3>
+            <h3>Sunset: <span id="sunset"></span></h3>
+            <h3><span id="city"></span>, <span id="country"></span></h3>
+        </div>
+    </div>
+</body>
+
+</html>
